@@ -1,0 +1,9 @@
+defaultIndent: "  "
+modifyLineBreaks:
+    textWrapOptions:
+        columns: 120
+        multipleSpacesToSingle: 1
+        blocksFollow:
+            par: 1
+            blankLine: 1
+            tabular: 1

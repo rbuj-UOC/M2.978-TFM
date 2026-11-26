@@ -1,0 +1,49 @@
+# Archivos auxiliares de compilación
+*.aux
+*.bak
+*.auxlock
+*.bbl
+*.bcf
+*.blg
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lol
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.xdv
+*.glstex
+
+# Archivos de bibliografía y borradores
+*.run.xml
+*.spl
+*_region.tex
+
+# Archivos específicos de editores (TeXShop, VS Code, etc.)
+*.kate-swp
+.texpadaux/
+.synctex(busy)
+
+# Archivos PDF generados
+*.pdf
+
+# Archivos de configuración de contenedores de desarrollo
+.devcontainer/devcontainer-lock.json
+
+*.data.minted
+_minted*/

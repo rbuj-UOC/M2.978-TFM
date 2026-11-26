@@ -1,0 +1,145 @@
+{
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "cSpell.language": "en,es",
+  "cSpell.userWords": [
+    "LaTeX",
+    "BibTeX",
+    "TeX",
+    "pdflatex",
+    "xelatex",
+    "lualatex",
+    "latexmk",
+    "tikz"
+  ],
+  "cSpell.words": [
+    "Adivi",
+    "aiot",
+    "arima",
+    "ARIMA",
+    "arnabbiswas",
+    "autoencoder",
+    "auxlock",
+    "Cambra",
+    "Catalunya",
+    "cceg",
+    "CCEG",
+    "Colab",
+    "cuartil",
+    "Dataframe",
+    "dataframes",
+    "devcontainers",
+    "Díaz",
+    "ects",
+    "ECTS",
+    "Estévez",
+    "Exhaustividad",
+    "Gantt",
+    "hiperparámetros",
+    "HRCAE",
+    "intercuartílico",
+    "jupyter",
+    "Justus",
+    "Kaggle",
+    "kagglehub",
+    "Kanagachidambaresan",
+    "Kanawaday",
+    "kate",
+    "Kounta",
+    "Lizcano",
+    "maint",
+    "mant",
+    "mape",
+    "MAPE",
+    "Maragall",
+    "mdae",
+    "Metalmecánico",
+    "Mian",
+    "MTBF",
+    "Oberta",
+    "PCDF",
+    "prescriptivo",
+    "pycodestyle",
+    "rmse",
+    "RMSE",
+    "semma",
+    "SEMMA",
+    "spanish",
+    "Subniveles",
+    "synctex",
+    "synthesising",
+    "telemetría",
+    "texlive",
+    "texpadaux",
+    "textsubscript",
+    "Universitat",
+    "WAAM",
+    "Weibull",
+    "Yuchen",
+    "Züfle"
+  ],
+  "latex-workshop.formatting.latex": "latexindent",
+  "latex-workshop.formatting.latexindent.args": [
+    "-c",
+    "%DIR%/",
+    "%TMPFILE%",
+    "-y=defaultIndent: '  '",
+    "-m",
+    "-l"
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "cwd": "%DIR%",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-shell-escape",
+        "%DOCFILE%.tex"
+      ]
+    },
+    {
+      "name": "bib2gls",
+      "command": "bib2gls",
+      "cwd": "%DIR%",
+      "args": [
+        "%DOCFILE%"
+      ]
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "cwd": "%DIR%",
+      "args": [
+        "%DOCFILE%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "pdfLaTeX + BibTeX + bib2gls + pdflatex*3",
+      "tools": [
+        "pdflatex",
+        "bibtex",
+        "bib2gls",
+        "pdflatex",
+        "pdflatex",
+        "pdflatex"
+      ]
+    }
+  ],
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
+    "editor.formatOnSave": true
+  },
+  "github.copilot.enable": {
+    "*": false,
+  }
+}

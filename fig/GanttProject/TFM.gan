@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2026-09-14" view-index="0" gantt-divider-location="574" resource-divider-location="300" version="3.3.3322" locale="es_ES">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd15" name="Notas" width="20" order="0"/>
+        <field id="tpd3" name="Nombre" width="323" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="88" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="91" order="2"/>
+        <field id="tpd6" name="Duración" width="70" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="209" order="0"/>
+        <field id="1" name="Función" width="85" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="Ninguna">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="223e49ac4e5e4efea936c3d894664d99" name="M1: Definición y planificación del trabajo final" meeting="false" start="2026-09-24" duration="7" complete="0" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" uid="c7b45edc09674f61b0bf88663f5649e8" name="M2: Estado del arte" meeting="false" start="2026-10-05" duration="14" complete="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" uid="83301dd4c35b456085a91a18c19ba511" name="M3: Diseño e implementación del trabajo" meeting="false" start="2026-10-23" duration="38" complete="0" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" uid="b5106a186d57401d9f592cf92175aed4" name="M4: Redacción de la documentación del TFM" meeting="false" start="2026-12-16" duration="15" complete="0" expand="true">
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+            <task id="10" uid="b2677d4289824937867362918f64695b" name="Redacción de la memoria: entrega preliminar" meeting="false" start="2026-12-16" duration="3" complete="0" expand="true">
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="11" uid="aa21641a433042829c73b4c4c1decc8b" name="Redacción de la memoria: entrega final" meeting="false" start="2026-12-21" duration="5" complete="0" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" uid="3fd0275b706b489fb071d787e3b9eb2a" name="Presentación audiovisual del trabajo" meeting="false" start="2026-12-28" duration="7" complete="0" expand="true"/>
+        </task>
+        <task id="13" uid="5b803caeb93e4d6b938119a84660d182" name="M5: Defensa del proyecto" meeting="false" start="2027-01-06" duration="4" complete="0" expand="true">
+            <task id="14" uid="b4ee6f623ecd47ddb87533174e416b7e" name="Entrega de la documentación en el tribunal" meeting="false" start="2027-01-06" duration="3" complete="0" expand="true"/>
+            <task id="15" uid="0ac06fa1e4f94c208f748bbd9f58ac91" name="Defensa pública del trabajo" meeting="false" start="2027-01-11" duration="1" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Robert Buj" function="SoftwareDevelopment:2" contacts="" phone="">
+            <rate name="standard" value="16"/>
+        </resource>
+        <resource id="1" name="Lorena Polo" function="Default:1" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

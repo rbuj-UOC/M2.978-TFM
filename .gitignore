@@ -1,0 +1,5 @@
+# Directorio de datos
+data/
+
+# Archivos de sistema
+.DS_Store

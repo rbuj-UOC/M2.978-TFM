@@ -1,0 +1,27 @@
+{
+  "name": "LaTeX Environment (Ubuntu 24.04)",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu24.04",
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "james-yu.latex-workshop",
+        "EditorConfig.EditorConfig",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-spanish"
+      ]
+    }
+  },
+
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y locales && sudo locale-gen es_ES.UTF-8 ca_ES.UTF-8 && sudo update-locale LANG=es_ES.UTF-8 && sudo apt-get install -y texlive-full python3-pygments && sudo apt-get clean",
+
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": "true",
+      "configureZshAsDefaultShell": "true",
+      "installOhMyZsh": "true"
+    }
+  },
+
+  "remoteUser": "vscode"
+}

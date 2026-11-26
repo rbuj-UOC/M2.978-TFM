@@ -1,0 +1,26 @@
+name: M2.978-TFM-src
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - matplotlib
+  - flake8
+  - numpy
+  - pandas
+  - scikit-learn
+  - ipython
+  - ipykernel
+  - jupyter
+  - opencv
+  - pycodestyle
+  - seaborn
+  - tabulate
+  - pip:
+      - tensorflow==2.19.*
+      - keras==3.10.*
+      - torch
+      - torchvision
+      - torchsummary
+      - pycodestyle_magic
